@@ -38,6 +38,40 @@ Exactmatch:
 ```
 pgrep -x -l fire  #(-x = --exact)
 ```
+ps
+```
+ps -e u | wc -l # choose all progress and user-oriented format -e = -A
+ps u -u root
+```
+get tty
+```
+ps t
+```
+get by command name
+```
+ps u -C firefox, bash
+```
+pstree with pid
+```
+pstree -p (pid)
+```
+byuser
+```
+psuser -pu (pid)
+```
+nice
+```
+nice -n 10 psname &
+nice --10 paname
+```
+change running ps -> renice
+```
+renice  -n -5 -u username
+renice -n 2 -p 1234 5678
+```
+
+```
+
 
 - cp8
 at command
