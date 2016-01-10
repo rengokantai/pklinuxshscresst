@@ -69,7 +69,18 @@ change running ps -> renice
 renice  -n -5 -u username
 renice -n 2 -p 1234 5678
 ```
+signal convert
+```
+kill -l 9 #SIGKILL
+```
+trap (ex, in shell script)
+```
+trap "rm file" SIGTERM SIGQUIT SIGABRT   # (when these signals trigger, rm file will execute)
+```
 
+ipcs
+```
+ipcs -m -p
 ```
 
 
