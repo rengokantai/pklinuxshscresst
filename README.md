@@ -16,6 +16,29 @@ pidof bash #2508
 ls -l /proc/2508/fd
 ```
 
+- cp7
+go to /proc/sys/kernel check pid_max,default is 32768
+
+get parent pid. (ppid)
+```
+pidof vi #8888
+ps -o ppid= -p 8888
+```
+kill,killall
+```
+kill -SIGKILL 8888
+killall -9 process_name
+```
+pkill, pgrep
+```
+pkill fire  #begins with fire, maybe firefox
+pgrep fire
+```
+Exactmatch:
+```
+pgrep -x -l fire  #(-x = --exact)
+```
+
 - cp8
 at command
 ```
