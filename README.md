@@ -15,6 +15,16 @@ book = "book" #no
 pidof bash #2508
 ls -l /proc/2508/fd
 ```
+- cp4
+```
+complete -p
+```
+some variables:
+```
+COMP_WORDS
+COMP_CWORD
+COMPREPLY
+```
 - cp5
 ```
 printenv SHELL
@@ -65,6 +75,13 @@ jobs
 job -r #background jobs
 job -s #suspended jobs
 job jobid
+```
+
+delete all stopped jobs
+```
+disown
+disown -r #delete all running tasks
+disown -a #delete all tasks
 ```
 
 
