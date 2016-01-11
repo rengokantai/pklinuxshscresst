@@ -15,6 +15,62 @@ book = "book" #no
 pidof bash #2508
 ls -l /proc/2508/fd
 ```
+- cp5
+```
+printenv SHELL
+env
+set| grep var
+```
+For path, we do not need to export, just append
+```
+PATH = $PATH:/......
+```
+
+
+- cp6
+```
+move -n src dest  # donot overwrite
+```
+just memorize
+```
+for i in /etc/profile.d/*.sh; do
+  if [ -r $i]; then
+  if[ "${-#*i}" != "$-"]; then
+  . "$i"
+  else
+```
+```
+echo $HISTFILE
+echo $HISTFILESIZE
+echo $HISTSIZE
+```
+prompt history
+press ! follow by other chars
+!? --> search previous commands
+
+suspend a running command:
+press ctrl z
+
+to send a suspended task to continue running in background:
+```
+bg
+```
+listing background tasks:
+```
+jobs
+```
+"+" means the job is ```fg``` or ```bg```
+"-" means the job will become default job if current default job terminates
+```
+job -r #background jobs
+job -s #suspended jobs
+job jobid
+```
+
+
+
+
+
 
 - cp7
 go to /proc/sys/kernel check pid_max,default is 32768
