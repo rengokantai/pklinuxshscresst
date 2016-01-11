@@ -29,6 +29,36 @@ unset countries[1]  #remove index
 Append more:
 countries= ("${#countries[@]}" "d" "e")
 ```
+asso array:
+```
+declare -A arrayname
+arrayname=([key1]=val1 [key2]=val2)
+${arrayname[*]}
+```
+append:
+```
+arrayname+=([key]=val)
+```
+forloop
+```
+for i in{3..20..3}; do echo -n "$i";done
+```
+xargs
+
+cp echo rm wc don't take input from a standard input or redirected output.
+
+if use xargs ifself without any parameters, press ctrl+d to exit.
+```
+xargs
+```
+others
+```
+xargs --show-limits
+```
+substitute lowercase to uppercase
+```
+tr '[a-z]' '[A-Z]'
+```
 - cp4
 ```
 complete -p
