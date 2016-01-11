@@ -15,6 +15,20 @@ book = "book" #no
 pidof bash #2508
 ls -l /proc/2508/fd
 ```
+- cp3
+```
+declare -a countries=(a b c)
+${#countries[@]}   #length
+${countries[@]}    # or [*], all contents
+
+${#countries[1]}   #length of word
+${countries[1]}   #word
+
+unset countries[1]  #remove index
+
+Append more:
+countries= ("${#countries[@]}" "d" "e")
+```
 - cp4
 ```
 complete -p
