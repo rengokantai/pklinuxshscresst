@@ -85,6 +85,11 @@ PATH = $PATH:/......
 ```
 move -n src dest  # donot overwrite
 ```
+moving a folder
+```
+mv ~/oldfolder/  /new   => /new/oldfolder
+```
+
 just memorize
 ```
 for i in /etc/profile.d/*.sh; do
@@ -152,6 +157,7 @@ pkill fire  #begins with fire, maybe firefox
 pgrep fire
 ```
 Exactmatch:
+(-l : list name as well as pid)
 ```
 pgrep -x -l fire  #(-x = --exact)
 ```
@@ -168,7 +174,7 @@ get by command name
 ```
 ps u -C firefox, bash
 ```
-pstree with pid
+pstree with pid (fron parent to children)
 ```
 pstree -p (pid)
 ```
@@ -183,7 +189,7 @@ nice --10 paname
 ```
 change running ps -> renice
 ```
-renice  -n -5 -u username
+renice  -n 5 -u username
 renice -n 2 -p 1234 5678
 ```
 signal convert
